@@ -84,7 +84,7 @@
             bindings = <
 &trans          &trans     &kp C_VOLUME_DOWN  &kp C_MUTE  &kp C_VOLUME_UP  &trans    &trans    &kp PAGE_UP    &kp UP            &trans            &trans  &trans
 &kp LEFT_SHIFT  &kp LG(Z)  &kp LG(X)          &kp LG(C)   &kp LG(V)        &trans    &trans    &kp LEFT       &kp DOWN          &kp RIGHT         &trans  &trans
-&trans          &trans     &trans             &kp LC(G)   &trans           &trans    &trans    &kp PAGE_DOWN  &kp LS(NUMBER_6)  &kp LS(NUMBER_7)  &trans  &trans
+&trans          &trans     &trans             &kp LC(G)   &kp LA(ENTER)    &trans    &trans    &kp PAGE_DOWN  &kp LS(NUMBER_6)  &kp LS(NUMBER_7)  &trans  &trans
                                               &trans      &trans           &trans    &kp CLCK  &mo 3          &kp RIGHT_ALT
             >;
         };
