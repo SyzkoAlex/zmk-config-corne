@@ -68,9 +68,9 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp ESC         &kp Q  &kp W  &kp E      &kp R  &kp T        &kp Y    &kp U  &kp I          &kp O    &kp P     &kp BSPC
-&kp LEFT_SHIFT  &kp A  &kp S  &kp D      &kp F  &kp G        &kp H    &kp J  &kp K          &kp L    &kp SEMI  &kp SQT
-&kp TAB         &kp Z  &kp X  &kp C      &kp V  &kp B        &kp N    &kp M  &kp COMMA      &kp DOT  &kp FSLH  &kp RSHFT
+&trans          &kp Q  &kp W  &kp E      &kp R  &kp T        &kp Y    &kp U  &kp I          &kp O    &kp P     &trans
+&kp LEFT_SHIFT  &kp A  &kp S  &kp D      &kp F  &kp G        &kp H    &kp J  &kp K          &kp L    &kp SEMI  &kp RIGHT_SHIFT
+&kp TAB         &kp Z  &kp X  &kp C      &kp V  &kp B        &kp N    &kp M  &kp COMMA      &kp DOT  &kp FSLH  &trans
                               &kp LCTRL  &mo 1  &kp SPACE    &kp RET  &mo 2  &kp RIGHT_GUI
             >;
         };
@@ -83,9 +83,9 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans          &trans     &kp C_VOLUME_DOWN  &kp C_MUTE  &kp C_VOLUME_UP  &trans    &trans    &kp PAGE_UP    &kp UP            &trans            &trans  &trans
-&kp LEFT_SHIFT  &kp LG(Z)  &kp LG(X)          &kp LG(C)   &kp LG(V)        &trans    &trans    &kp LEFT       &kp DOWN          &kp RIGHT         &trans  &trans
-&trans          &trans     &trans             &kp LC(G)   &kp LA(ENTER)    &trans    &trans    &kp PAGE_DOWN  &kp LS(NUMBER_6)  &kp LS(NUMBER_7)  &trans  &trans
+&trans          &trans     &kp C_VOLUME_DOWN  &kp C_MUTE  &kp C_VOLUME_UP  &trans    &trans    &kp PAGE_UP    &kp UP            &trans            &trans         &trans
+&kp LEFT_SHIFT  &kp LG(Z)  &kp LG(X)          &kp LG(C)   &kp LG(V)        &trans    &trans    &kp LEFT       &kp DOWN          &kp RIGHT         &kp BACKSPACE  &trans
+&trans          &kp ESC    &trans             &kp LC(G)   &kp LA(ENTER)    &trans    &trans    &kp PAGE_DOWN  &kp LS(NUMBER_6)  &kp LS(NUMBER_7)  &kp SQT        &trans
                                               &trans      &trans           &trans    &kp CLCK  &mo 3          &kp RIGHT_ALT
             >;
         };
@@ -98,7 +98,7 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TILDE       &trans     &kp AT                &kp DOLLAR  &kp HASH               &trans      &trans       &kp LEFT_BRACKET  &kp UNDER      &kp RIGHT_BRACKET  &trans           &trans
+&trans          &trans     &kp AT                &kp DOLLAR  &kp HASH               &trans      &trans       &kp LEFT_BRACKET  &kp UNDER      &kp RIGHT_BRACKET  &trans           &trans
 &kp LEFT_SHIFT  &kp GRAVE  &kp LESS_THAN         &kp EQUAL   &kp GREATER_THAN       &kp PLUS    &kp PERCENT  &kp LEFT_BRACE    &kp SEMICOLON  &kp RIGHT_BRACE    &kp EXCLAMATION  &trans
 &trans          &kp ASTRK  &kp LEFT_PARENTHESIS  &kp MINUS   &kp RIGHT_PARENTHESIS  &trans      &trans       &kp PIPE          &kp TILDE      &kp AMPERSAND      &trans           &trans
                                                  &trans      &mo 3                  &trans      &trans       &trans            &trans
@@ -107,9 +107,9 @@
 
         layer_3 {
             bindings = <
-&trans          &trans        &kp F1  &kp F2  &kp F3  &kp F10    &trans        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans         &trans
-&kp LEFT_SHIFT  &kp LEFT_GUI  &kp F4  &kp F5  &kp F6  &kp F11    &kp NUMBER_0  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp RIGHT_ALT  &bt BT_CLR_ALL
-&trans          &trans        &kp F8  &kp F8  &kp F9  &kp F12    &trans        &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &trans         &trans
+&trans          &trans        &kp F1  &kp F2  &kp F3  &kp F10    &trans        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans         &bt BT_CLR_ALL
+&kp LEFT_SHIFT  &kp LEFT_GUI  &kp F4  &kp F5  &kp F6  &kp F11    &kp NUMBER_0  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp RIGHT_ALT  &bt BT_SEL 0
+&trans          &trans        &kp F8  &kp F8  &kp F9  &kp F12    &trans        &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &trans         &bt BT_SEL 1
                                       &trans  &trans  &trans     &trans        &trans        &trans
             >;
         };
